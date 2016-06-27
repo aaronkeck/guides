@@ -58,7 +58,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/static/js',
-    filename: 'bundle.js'
+    filename: 'app.js'
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -113,7 +113,7 @@ module.exports = {
   },
   output: {
     path: __dirname + '/static/js',
-    filename: 'bundle.js'
+    filename: 'app.js'
   },
   plugins: [
     new webpack.ProvidePlugin({
@@ -147,11 +147,11 @@ We'll now create our `index.html` file to reference our new application and
 start it.
 
 ```html
-<script src="static/js/bundle.js"></script>
+<script src="static/js/app.js"></script>
 ```
 
 If you're using any other imported JavaScript (e.g. jQuery), make sure they're
-loaded before our `bundle.js` file so anything that depends on them will be able
+loaded before our `app.js` file so anything that depends on them will be able
 to see the globals they expose.
 
 
